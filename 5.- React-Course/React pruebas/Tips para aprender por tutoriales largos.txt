@@ -1,0 +1,36 @@
+problematica
+
+mayor parte del tiempo escribiendo codigo tratando de acabar igual que el
+(mi mente se ocupa en escribir rapido el codigo)
+menor parte del tiempo analizando el codigo 
+
+Consecuencias:
+sintaxis erronea
+retrasos
+entendimiento escaso
+fastidio
+
+objetivo
+mayor parte del tiempo analizando el codigo
+menor parte del tiempo escribiendo codigo
+
+Consecuencias:
+Mayor entendimiento
+probable optimizacion del tiempo
+
+
+Propuestas:
+
+1.- Ver 1 vez el video
+	1. Copiar el codigo de la seccion en el IDE y notepad e ir comentando el codigo en el IDE mientras explica
+	2. Ya funcionando mover todo el codigo al notepad y e intentar hacerlo solo en el vs code.
+
+
+2.- Ver mismo video 2 veces
+	1. Primera vez: 1)Copiar el codigo de la seccion en el IDE y comentarlo todo
+			2)descomentarlo cuando sea escrita la linea en el video	
+			3)Comentar lo descomentado en el codigo mientras explica
+
+	2. Segunda vez: refuerzo y memorizado del mismo
+
+

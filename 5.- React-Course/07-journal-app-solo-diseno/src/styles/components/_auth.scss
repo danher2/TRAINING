@@ -1,0 +1,62 @@
+//asegurarse de importar este archivo scss en styles.scss
+.auth__main {
+    align-items: center; // centrar todo
+    background-color: $primary;//color que tenemos en el settings.css $primary -> es la referencia
+    display: flex; // caja centrada
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.auth__box-container {
+    background-color: white;
+    box-shadow: 0px 3px $dark-grey;
+    border-radius: 2px;
+    padding: 20px;
+    width: 250px;
+}
+
+
+.auth__title {
+    color: darken($color: $primary, $amount: 20); // darken = funcion de sass para modificar colores $color:$primary el color base que ya tenemos y $amount: la modificacion
+    margin-bottom: 20px;
+}
+
+.auth__input {
+    color: $dark-grey;
+    border: 0px;
+    border-bottom: 1px solid $light-grey;
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100%;
+
+    transition: border-bottom .3s ease; //animar la transicion
+    
+    &:focus { // se le dice a sass que es la misma clase pero cuando este con el foco
+        border-bottom: 1px solid $primary;
+        outline: none; // que no tenga ningun foco cuando esta seleccionado
+    }
+}
+
+.auth__social-networks {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+.auth__alert-error {  // en el caso que suceda un error colocaremos el background-color en rojo
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px
+}

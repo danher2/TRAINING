@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+</head>
+<body>
+    <h3 th:text="${titulo}"></h3>
+
+	<form th:action="@{/form}" method="post">
+
+		<div>
+			<label for="username">Username</label>
+			<div>
+			<input type="text" name="username" id="username" th:value="${usuario.username}"><!-- th:value para que no se borre el valor a la hora que haya falla en la validacion para esto agregar un objeto de tipo usuario por defecto en el metodo get del controlador-->
+			</div>
+			<!--  si hay un error  en error que contiene el key username, lo mostramos -->
+			<div th:if="${error != null && error.containsKey('username')}" th:text="${error.username}"></div>
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<div>
+				<input type="password" name="password" id="password">
+			</div>
+			<!--  si hay un error  en error que contiene el key password, lo mostramos -->
+			<div th:if="${error != null && error.containsKey('password')}" th:text="${error.password}"></div>
+		</div>
+		<div>
+			<label for="email">Correo</label>
+			<div>
+				<input type="text" name="email" id="email" th:value="${usuario.email}">
+			</div>
+			<!--  si hay un error  en error que contiene el key email, lo mostramos -->
+			<div th:if="${error != null && error.containsKey('email')}" th:text="${error.email}"></div>
+		</div>
+		
+		<div>
+			<div>
+				<input type="submit" value="Enviar">
+			</div>
+		</div>	
+	</form>
+</body>
+</html>

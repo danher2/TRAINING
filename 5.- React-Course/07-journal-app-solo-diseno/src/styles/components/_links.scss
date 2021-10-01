@@ -1,0 +1,10 @@
+//asegurarse que este estilo este importado en styles.scss
+
+.link {
+    color: $dark-grey;
+    text-decoration: none;
+
+    &:hover {// cuando el cursor este sobre el que aparezca el subrayado
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+</head>
+<body>
+    <h3 th:text="${titulo}"></h3>
+
+<!-- atributo object de objeto, este formulario y cada uno de sus campos esta mapeado a este objeto
+esto es para mapear el formulario a la clase pojo -->
+	<form th:action="@{/form}" th:object="${usuario}" method="post">
+
+		<div>
+			<label for="identificador">Identificador</label>
+			<div><!-- arestisco indica asignacion de un atributo a una clase, solo se declara el atributo -->
+				<input type="text" id="identificador" th:field="*{identificador}">
+			</div>
+			<!-- #fields, propio de thymeleaf para validar los mensajes de error , mensajes de error que arrojara son propios de spring -->
+			<div th:if="${#fields.hasErrors('identificador')}" th:errors="*{identificador}"></div>
+		</div>
+		
+		<div>
+			<label for="nombre">Nombre</label>
+			<div>
+				<input type="text" id="nombre" th:field="*{nombre}">
+			</div>
+			<div th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></div>
+		</div>
+		<div>
+			<label for="apellido">Apellido</label>
+			<div>
+				<input type="text" id="apellido" th:field="*{apellido}">
+			</div>
+			<div th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}"></div>
+		</div>
+		<div>
+			<label for="username">Username</label>
+			<div>
+				<input type="text" id="username" th:field="*{username}">
+			</div>
+			<div th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></div>
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<div>
+				<input type="password" th:field="*{password}" id="password">
+			</div>
+			<div th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+		</div>
+		<div>
+			<label for="email">Correo</label>
+			<div>
+				<input type="text" id="email" th:field="*{email}">
+			</div>
+			<div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+		</div>
+		
+		<div>
+			<div>
+				<input type="submit" value="Enviar">
+			</div>
+		</div>	
+	</form>
+</body>
+</html>

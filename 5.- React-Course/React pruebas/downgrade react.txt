@@ -1,0 +1,9 @@
+cambiar la version enel package json
+borrar node_modules
+npm install --legacy-peer-deps  react@16.13.0
+
+
+
+https://stackoverflow.com/questions/64936044/fix-the-upstream-dependency-conflict-installing-npm-packages
+
+NOTA: cuando no sirvan los npm desinstalar y reinstalar node.js

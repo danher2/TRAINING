@@ -1,0 +1,18 @@
+
+<!-- No esta relacionan a a ningun controlador solo personaliza los errores que por default salgan -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Ha ocurrido un error Oops!</title>
+</head>
+<body><!-- objetos predefinidos en thymeleaf para menejar errores con th:text llamaso los objetos error, message, status, timestamp, trace-->
+<h3>Ha ocurrido un error Oops!</h3>
+<div th:text="${error}"></div>
+<div th:text="${message}"></div>
+<div th:text="${status}"></div>
+<div th:text="${timestamp}"></div>
+<hr>
+<div th:text="${trace}"></div><!-- la traza -->
+</body>
+</html>

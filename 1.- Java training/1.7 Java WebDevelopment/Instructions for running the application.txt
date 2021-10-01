@@ -1,0 +1,27 @@
+intructions:
+
+-just upgrade maven project
+-change from java 5 to java 8, thats it.
+
+-add JSTL dependency according to your tomcat version (version 8 this case stackoverflow)in the pom.xml 
+https://stackoverflow.com/questions/4928271/how-to-install-jstl-the-absolute-uri-http-java-sun-com-jstl-core-cannot-be-r
+
+<dependency>
+    <groupId>org.glassfish.web</groupId>
+    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+    <version>1.2.6</version>
+</dependency>
+
+
+-make maven build  = eclipse:eclipse
+
+-install manually jar 1.2.6
+
+-upgrade maven project
+
+-change from java 5 to java 8
+
+
+-then run the app
+
+

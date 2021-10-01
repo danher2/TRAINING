@@ -1,0 +1,30 @@
+package org.aguzman.api.stream.ejemplos.models;
+//pojo
+public class Factura {
+	
+    private String descripcion;
+    private Usuario usuario;
+    
+    
+    //const
+    public Factura(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+//    getter&setter
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+}

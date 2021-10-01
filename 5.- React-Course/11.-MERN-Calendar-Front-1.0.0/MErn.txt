@@ -1,0 +1,22 @@
+react router dom
+boostrap
+aparte del inde.js hace otra clase js con el nombre que indica el nombre de la app y en la misma ruta
+hace carpeta components y dentro de esa auth , calendar y ui
+instala font awesome
+repositorio npm  descargar react big calendar
+react modal instalacion
+estilos gist de react modal
+formulario del modal
+instala react dateTimepicker
+se hacen validaciones en el formulario del modal
+se instala sweet alert2 - npm sweetalert2
+
+Configuracion de Redux (para tener un estado en la app)
+
+instalar react-redux, redux, thunk (tareas asincronas)
+crear directorios types, store, reducers, actions
+los reducers manejan los types con los switch case
+configugar los reducers en rootReducer (estudiar los reducer y el useContext y los hooks)
+crear y configurar el store
+las actions devuelven objetos
+nota: primero saber que evento necesito y despues checar el camino que me conduce a el (dependencia del useeffect)

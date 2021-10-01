@@ -1,0 +1,5 @@
+Error
+warning: LF will be replaced by CRLF and Special characters appear 
+https://github.com/gobuffalo/buffalo/issues/1189
+
+Error:

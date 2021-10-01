@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- para agregar atributos, con esto se puede agregar atributos -->
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title> <!-- se agrega atributo , reemplaza el valor o el texto  -->
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link><!--  referenciamos nuestro stilo css con thymeleaf, para que encuentre nuestros recursos estaticos -->
+</head>
+<body>
+<h1 class="color-rojo" th:text="${titulo}"></h1>
+<h2 class="color-azul">Decorando con estilos css recursos estáticos</h2>
+<img th:src="@{/images/spring.png}"></img><!--  nuestra ruta nuestra carpeta static para que muestre nuestra imagen -->
+</body>
+</html>

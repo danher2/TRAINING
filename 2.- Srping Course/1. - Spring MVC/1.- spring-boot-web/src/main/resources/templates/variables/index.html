@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title><!--  se hace referencia a la variable titulo -->
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<ul>
+<!-- thymeleaf se busca la ruta del controlador empezando con y se le concatena un string (primer parametro) y  en el tercer link son dos paramteros @ -->
+<li><a th:href="@{/variables/string/} + 'Hola Andrés'">/variables/string/Hola Andrés</a></li>
+<li><a th:href="@{/variables/string/} + 'Que tal John'">/variables/string/Que tal John</a></li>
+<li><a th:href="@{/variables/string/} + ${'Saludos Andrés'} + '/' + ${'7'}">/variables/string/Saludos Andrés/7</a></li>
+</ul>
+</body>
+</html>
